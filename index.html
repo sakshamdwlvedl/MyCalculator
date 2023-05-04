@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" class="giveColor" onclick="clearData()">
+                    <input type="button" value="DEL" class="giveColor" onclick="deleteData()">
+                    <input type="button" value="%" class="giveColor" onclick="appendData('%')">
+                    <input type="button" value="+" class="giveColor" onclick="appendData('+')">
+                </div>
+                <div>
+                    <input type="button" value="8" class="hoverColor" onclick="appendData('8')">
+                    <input type="button" value="7" class="hoverColor" onclick="appendData('7')">
+                    <input type="button" value="9" class="hoverColor" onclick="appendData('9')">
+                    <input type="button" value="-" class="giveColor" onclick="appendData('-')">
+                </div>
+                <div>
+                    <input type="button" value="5" class="hoverColor" onclick="appendData('5')">
+                    <input type="button" value="4" class="hoverColor" onclick="appendData('4')">
+                    <input type="button" value="6" class="hoverColor" onclick="appendData('6')">
+                    <input type="button" value="*" class="giveColor" onclick="appendData('*')">
+                </div>
+                <div>
+                    <input type="button" value="1" class="hoverColor" onclick="appendData('1')">
+                    <input type="button" value="2" class="hoverColor" onclick="appendData('2')">
+                    <input type="button" value="3" class="hoverColor" onclick="appendData('3')">
+                    <input type="button" value="/" class="giveColor" onclick="appendData('/')">
+                </div>
+                <div>
+                    <input type="button" value="0" class="hoverColor" onclick="appendData('0')">
+                    <input type="button" value="." class="giveColor" onclick="appendData('.')">
+                    <input type="button" value="=" class="equalButton" onclick="calculate()">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
